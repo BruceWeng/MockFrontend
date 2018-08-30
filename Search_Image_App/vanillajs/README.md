@@ -6,7 +6,7 @@
 * Conditional Rendering
 * Rendering Lists of Data
 ## Process
-* [ ] Add search form to page
+* [x] Add search form to page
 * [ ] Make API Request with search term when form is submitted
 * [ ] Show loading image
 * [ ] Append Results to the page

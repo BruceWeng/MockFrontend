@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vanilla JS Search Image App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+</head>
+<body>
+  <h1>Vanilla JS Search Image App</h1>
+  <form>
+    <!-- label for attribute allows you to click the label and focus on input with the same id name -->
+    <label for="searchTerm"></label>
+    <!-- The id should be unique as it should be used by JavaScript to select the element in the DOM 
+      for manipulation and used in CSS selectors. -->
+    <!-- The name attribute on an input is used by its parent HTML <form>s to include that element 
+      as a member of the HTTP form in a POST request or the query string in a GET request. -->
+    <input class="u-full-width" type="text" id="searchTerm" name="searchTerm">
+    <button>Search</button>
+  </form>
+  <script src="main.js"></script>
+</body>
+</html>
