@@ -6,3 +6,5 @@ Build small frontend features in VanillaJS and ReactJS
 ## Search Image App
 * [x] VanillaJS
 * [ ] ReactJS
+## Dropdown Menu
+* [ ] VanillaJS
