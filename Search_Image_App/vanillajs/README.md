@@ -10,5 +10,5 @@
 * [x] Make API Request with search term when form is submitted
 * [x] Show loading image
 * [x] Append Results to the page
-* [ ] Hide loading image
+* [x] Hide loading image
 

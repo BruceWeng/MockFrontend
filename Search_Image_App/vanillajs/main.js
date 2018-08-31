@@ -27,7 +27,10 @@ function formSubmitted(e) {
    * And attributes are the elements of the attributes property of that object.
    */
   search(searchTerm)
-  .then(displayImages); // Call displayImages function
+  .then(displayImages) // Call displayImages function
+  .then(() => {
+    loadingImage.style.display = 'none'; // Hide loading image after loading is finished
+  });
 }
 
 /**
@@ -36,11 +39,17 @@ function formSubmitted(e) {
  * @return {Promise}
  */
 function search(searchTerm) {
-  loadingImage.style.display = '';
+  loading();
+
   return fetch(`${API_URL}${searchTerm}`)
   .then(res => res.json()) 
   // res.json() returns a promise that resolves with the result of parsing the body text as JSON.
   .then(result => result.results); // results is the array from unslash API
+}
+
+function loading() {
+  loadingImage.style.display = '';
+  imageSection.innerHTML = ''; // Clear all previous img elements
 }
 
 /**
@@ -49,7 +58,6 @@ function search(searchTerm) {
  */
 function displayImages(images) {
   images.forEach(image => {
-    console.log(image.urls.regular);
     // Create img element
     const imageElement = document.createElement('img');
     // Add image url to image element src
