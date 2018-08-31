@@ -4,5 +4,5 @@ Build small frontend features in VanillaJS and ReactJS
 * [ ] VanillaJS
 * [ ] ReactJS
 ## Search Image App
-* [ ] VanillaJS
+* [x] VanillaJS
 * [ ] ReactJS
