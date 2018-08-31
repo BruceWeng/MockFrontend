@@ -6,6 +6,8 @@ const API_URL = `https://api.unsplash.com/search/photos?client_id=${config.ACCES
 // 1. Select DOM
 const form = document.querySelector('form'); // Select Tag Name
 const input = document.querySelector('input');
+const loadingImage = document.querySelector('#loadingImage');
+loadingImage.style.display = 'none'; // Hide it default
 
 // 2. Add EventListener
 form.addEventListener('submit', formSubmitted);
@@ -29,6 +31,7 @@ function formSubmitted(e) {
 }
 
 function search(searchTerm) {
+  loadingImage.style.display = '';
   fetch(`${API_URL}${searchTerm}`)
   .then(res => res.json()) 
   // res.json() returns a promise that resolves with the result of parsing the body text as JSON.
