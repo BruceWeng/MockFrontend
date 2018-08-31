@@ -8,6 +8,7 @@ const form = document.querySelector('form'); // Select Tag Name
 const input = document.querySelector('input');
 const loadingImage = document.querySelector('#loadingImage');
 loadingImage.style.display = 'none'; // Hide it default
+const imageSection = document.querySelector('.images');
 
 // 2. Add EventListener
 form.addEventListener('submit', formSubmitted);
@@ -25,17 +26,37 @@ function formSubmitted(e) {
    * For a given DOM node object, properties are the properties of that object.
    * And attributes are the elements of the attributes property of that object.
    */
-  search(searchTerm);
-  console.log(input);
-  console.log(searchTerm);
+  search(searchTerm)
+  .then(displayImages); // Call displayImages function
 }
 
+/**
+ * 
+ * @param {String} searchTerm 
+ * @return {Promise}
+ */
 function search(searchTerm) {
   loadingImage.style.display = '';
-  fetch(`${API_URL}${searchTerm}`)
+  return fetch(`${API_URL}${searchTerm}`)
   .then(res => res.json()) 
   // res.json() returns a promise that resolves with the result of parsing the body text as JSON.
-  .then(result => console.log(result));
+  .then(result => result.results); // results is the array from unslash API
+}
+
+/**
+ * 
+ * @param {Array} images from promise
+ */
+function displayImages(images) {
+  images.forEach(image => {
+    console.log(image.urls.regular);
+    // Create img element
+    const imageElement = document.createElement('img');
+    // Add image url to image element src
+    imageElement.src = image.urls.regular;
+    // Append imageElement to imageSection
+    imageSection.appendChild(imageElement);
+  });
 }
 
 

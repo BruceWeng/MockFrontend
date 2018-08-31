@@ -9,6 +9,6 @@
 * [x] Add search form to page
 * [x] Make API Request with search term when form is submitted
 * [x] Show loading image
-* [ ] Append Results to the page
+* [x] Append Results to the page
 * [ ] Hide loading image
 
