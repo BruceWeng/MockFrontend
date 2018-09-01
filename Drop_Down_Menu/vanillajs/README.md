@@ -10,6 +10,14 @@
 * Submenu images are also clickable
 * When a user’s mouse leaves the submenu, it closes
 ## Process
-* [] 
+* [x] Top level menu by putting the elements onto HTML.
+* [] Style dropdown menu in BEM convention and set display to inline-block
+* [] Create submenu
+* [] Style submenu and set display in inline-block
+* [] Implement the behavior with mouseenter and mouseleave event
+* [] Fetch data from server for menu and submenu
+* [] Restyle layout in CSS grid
+
+
 
 
