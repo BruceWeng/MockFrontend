@@ -8,3 +8,5 @@ Build small frontend features in VanillaJS and ReactJS
 * [ ] ReactJS
 ## Dropdown Menu
 * [ ] VanillaJS
+## Thinking in React with VanillaJS
+* [x] React design pattern

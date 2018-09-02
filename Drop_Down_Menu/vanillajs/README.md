@@ -16,6 +16,7 @@
 * [] Style submenu and set display in inline-block
 * [] Implement the behavior with mouseenter and mouseleave event
 * [] Fetch data from server for menu and submenu
+* [] Refactor HTML into Web Components (Reflect property to attribute only when it is relied on selectors)
 * [] Restyle layout in CSS grid
 
 
