@@ -10,3 +10,5 @@ Build small frontend features in VanillaJS and ReactJS
 * [ ] VanillaJS
 ## Thinking in React with VanillaJS
 * [x] React design pattern
+## React Life Cycle
+* [x] ReactJS
