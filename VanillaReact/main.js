@@ -64,3 +64,8 @@ const CreateElement = function(tag, props, children) {
   }
   return elem.innerHTML(children);
 }
+
+/**
+ * React.createElement(tag, props, children): returns an Element Tree Object
+ * React.createClass({ InitialStates }, { DefaultProps }, { render func }): returns a function
+ */
