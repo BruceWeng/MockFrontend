@@ -19,6 +19,15 @@ Build small frontend features in VanillaJS and ReactJS
 * [ ] Higher Order Component
 * [ ] Render Prop
 * [ ] State Reducer
+# Vanilla Utilities
+* [ ] Debounce
+* [ ] Throttle
+* [ ] Memoize
+* [ ] Flatten
+* [ ] Promise
+* [ ] Event Emitter
+# Vanilla Features
+* [ ] Infinite Scrolling
 # Vanilla Components
 ## CSS
 * [ ] Breadcrumb
