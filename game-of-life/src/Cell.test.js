@@ -33,4 +33,10 @@ describe('Cell', () => {
     const nextStateWith5Neighbors = cell.getNextState(5);
     expect(nextStateWith5Neighbors).toBe(CellState.DEAD);
   });
+
+  it('Should come alive with exactly 3 neighbors', () => {
+    const cell = new Cell(CellState.DEAD);
+    const nextStateWith3Neighbors = cell.getNextState(3);
+    expect(nextStateWith3Neighbors).toBe()
+  });
 });
