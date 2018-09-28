@@ -12,6 +12,6 @@
 * Game
   * [x] Sould be initialized with a given state
     * [x] Array of arrays of states
-  * [ ] Should retrieve a cell at a given row and column
+  * [x] Should retrieve a cell at a given row and column
   * [ ] Should get the number of alive neighbors for a given cell
   * [ ] Should create the next state of the game
