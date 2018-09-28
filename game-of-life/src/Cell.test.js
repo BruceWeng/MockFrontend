@@ -12,8 +12,8 @@ describe('Cell', () => {
 
   it('Should die if it has fewer than 2 live neighbors', () => {
     const cell = new Cell(CellState.ALIVE);
-    const nextState = cell.getNextState(1);
-    expect(nextState).toBe(CellState.DEAD);
+    const nextStateWith1Neighbors = cell.getNextState(1);
+    expect(nextStateWith1Neighbors).toBe(CellState.DEAD);
   });
 
   it('Should live with 2 or 3 neighbors', () => {
@@ -23,5 +23,14 @@ describe('Cell', () => {
 
     const nextStateWith3Neighbors = cell.getNextState(3);
     expect(nextStateWith3Neighbors).toBe(CellState.ALIVE);
+  });
+
+  it('Should die with more than 3 neighbors', () => {
+    const cell = new Cell(CellState.ALIVE);
+    const nextStateWith4Neighbors = cell.getNextState(4);
+    expect(nextStateWith4Neighbors).toBe(CellState.DEAD);
+
+    const nextStateWith5Neighbors = cell.getNextState(5);
+    expect(nextStateWith5Neighbors).toBe(CellState.DEAD);
   });
 });

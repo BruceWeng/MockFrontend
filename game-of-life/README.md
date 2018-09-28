@@ -6,9 +6,9 @@
   * [x] Should be initialized with a cellState
   * [x] Should die if it has fewer that 2 live neighbors
     * [x] getNextState(numNeighbors)
-  * [ ] Should live with 2 or 3 live neighbors
-  * [ ] Should die with more than neighbors
-  * [ ] Should come alice with exactly 3 neighbors
+  * [x] Should live with 2 or 3 live neighbors
+  * [x] Should die with more than 3 neighbors
+  * [ ] Should come alive with exactly 3 neighbors
 * Game
   * [ ] Sould be initialized with a given state
     * [ ] Array of arrays of states
