@@ -3,7 +3,7 @@
   * [x] Has an ALIVE state
   * [x] Has a DEAD state
 * Cell
-  * [ ] Should be initialized with a cellState
+  * [x] Should be initialized with a cellState
   * [ ] Should die if it has fewer that 2 live neighbors
     * [ ] getNextState(numNeighbors)
   * [ ] Should live with 2 or 3 live neighbors
