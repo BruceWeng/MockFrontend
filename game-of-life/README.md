@@ -4,8 +4,8 @@
   * [x] Has a DEAD state
 * Cell
   * [x] Should be initialized with a cellState
-  * [ ] Should die if it has fewer that 2 live neighbors
-    * [ ] getNextState(numNeighbors)
+  * [x] Should die if it has fewer that 2 live neighbors
+    * [x] getNextState(numNeighbors)
   * [ ] Should live with 2 or 3 live neighbors
   * [ ] Should die with more than neighbors
   * [ ] Should come alice with exactly 3 neighbors
